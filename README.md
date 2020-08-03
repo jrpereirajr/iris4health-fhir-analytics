@@ -31,21 +31,21 @@ docker-compose up -d
 After instance is running, run theses commands in order to populate FHIR database:
 
 ```
+docker exec -it iris4health-fhir-analytics_fhiranalytics_1 /bin/bash
+irissession IRIS
 ZNspace "FHIRANALYTICS"
 Do ##class(community.fhirAnalytics.samples.Populate).Run("/shared/samples/")
 ```
 
 *Note*: if such command fails, please, wait some time util FHIR production finish its statup. I'll try to improve this in next releases. :)
 
-After use, you can turn off the container:
-
-```
-docker-compose down
-```
-
 ## Exploring
 
 IRIS Analytics patient dashboard URL:
+
+*Credentials*:
+ * Username: SuperUser
+ * Password: password
 
 ```
 http://localhost:52776/csp/healthshare/fhiranalytics/_DeepSee.UserPortal.DashboardViewer.zen?DASHBOARD=User/Patient.dashboard
