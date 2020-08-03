@@ -23,6 +23,7 @@ git clone https://github.com/jrpereirajr/iris4health-fhir-analytics.git
 Build and up the docker container:
 
 ```
+cd .\iris4health-fhir-analytics\
 docker-compose build
 docker-compose up -d
 ```
