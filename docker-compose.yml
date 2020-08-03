@@ -1,0 +1,18 @@
+version: '3.3'
+services:
+
+  fhiranalytics:
+    build:
+      context: .
+    image: fhiranalytics
+    hostname: fhiranalytics
+    ports:
+    - "51776:51773" # superserver port
+    - "52776:52773" # webserver/management portal port
+    volumes:
+    - type: bind
+      source: ./misc
+      target: /home/irisowner/irislicense
+    - type: bind
+      source: ./iris-shared
+      target: /shared
