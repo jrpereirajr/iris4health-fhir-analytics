@@ -7,7 +7,7 @@ A set of IRIS Analytics resources built on IRIS for Health FHIR server.
 * A sample FHIR server setup on a IRIS for Health instance.
 * A POC on creating a simple cube, a pivot table and a dashboard for patients stored by FHIR server, using IRIS Analytics (formerly known as DeepSee).
 
-## What's comming soon?
+## What's coming soon?
 
 * More dashboards
 * DeepSeeWeb support
