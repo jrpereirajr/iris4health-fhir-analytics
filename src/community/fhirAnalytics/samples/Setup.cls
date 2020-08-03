@@ -108,9 +108,9 @@ ClassMethod Run()
   Do ..InstallFHIRAnalytics()
   Write !, "OK!"
 
-  Write !, "Populating..."
-  Do ..PopulateFHIRAnalytics()
-  Write !, "Ok!"
+  #; Write !, "Populating..."
+  #; Do ..PopulateFHIRAnalytics()
+  #; Write !, "Ok!"
 }
 
 }
