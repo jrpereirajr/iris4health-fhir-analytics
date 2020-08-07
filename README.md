@@ -41,7 +41,11 @@ Do ##class(community.fhirAnalytics.samples.Populate).Run("/shared/samples/")
 
 ## Exploring
 
-IRIS Analytics patient dashboard URL:
+After ran population method, some data will be uploaded to FHIR database:
+
+<img src="https://raw.githubusercontent.com/jrpereirajr/iris4health-fhir-analytics/master/img/Screenshot_36.png"></img>
+
+A simple IRIS Analytics patient dashboard will also be availble in this URL:
 
 *Credentials*:
  * Username: SuperUser
@@ -50,6 +54,14 @@ IRIS Analytics patient dashboard URL:
 ```
 http://localhost:52776/csp/healthshare/fhiranalytics/_DeepSee.UserPortal.DashboardViewer.zen?DASHBOARD=User/Patient.dashboard
 ```
+<img src="https://raw.githubusercontent.com/jrpereirajr/iris4health-fhir-analytics/master/img/aJyxE9FPRy.gif"></img>
+
+This same dashboard can be viewed using DeepSee Web viewer:
+
+```
+http://localhost:52776/dsw/index.html#!/d/User/Patient.dashboard?ns=FHIRANALYTICS
+```
+<img src="https://raw.githubusercontent.com/jrpereirajr/iris4health-fhir-analytics/master/img/dXUitKM9JJ.gif"></img>
 
 ## Special thanks
 
