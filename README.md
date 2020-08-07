@@ -9,7 +9,7 @@ A set of IRIS Analytics resources built on IRIS for Health FHIR server.
   * Importing some sample data into FHIR database;
   * A simple cube, pivot table and dashboard for patientsusing IRIS Analytics (formerly known as DeepSee);
   * Create a cube manager.
-  * [DeepSeeWeb](https://openexchange.intersystems.com/package/DeepSeeWeb): support
+  * [DeepSeeWeb](https://openexchange.intersystems.com/package/DeepSeeWeb) support
 
 ## What's coming soon?
 
