@@ -78,6 +78,22 @@ ClassMethod InstallFHIRAnalytics()
   }
 }
 
+ClassMethod InstallDSW()
+{
+  Set status = $$$OK
+  Set origin = $ZNspace
+  Try {
+    // Install DSW via ZPM
+    ZNspace "FHIRANALYTICS"
+    ZPM "install dsw"
+    ZNspace origin
+  }
+  Catch(e) {
+    ZNspace origin
+    Throw e
+  }
+}
+
 ClassMethod PopulateFHIRAnalytics()
 {
   Set status = $$$OK
@@ -106,6 +122,10 @@ ClassMethod Run()
 
   Write !, "Installing FHIR Analytics..."
   Do ..InstallFHIRAnalytics()
+  Write !, "OK!"
+
+  Write !, "Installing DeepSeeWeb..."
+  Do ..InstallDSW()
   Write !, "OK!"
 
   #; Write !, "Populating..."
