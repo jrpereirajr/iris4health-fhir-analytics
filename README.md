@@ -5,12 +5,15 @@ A set of IRIS Analytics resources built on IRIS for Health FHIR server.
 ## What's ready?
 
 * A sample FHIR server setup on a IRIS for Health instance.
-* A POC on creating a simple cube, a pivot table and a dashboard for patients stored by FHIR server, using IRIS Analytics (formerly known as DeepSee).
+* A POC for:
+  * Importing some sample data into FHIR database;
+  * A simple cube, pivot table and dashboard for patientsusing IRIS Analytics (formerly known as DeepSee);
+  * Create a cube manager.
+  * [DeepSeeWeb](https://openexchange.intersystems.com/package/DeepSeeWeb): support
 
 ## What's coming soon?
 
 * More dashboards
-* DeepSeeWeb support
 
 ## Installing
 
@@ -56,7 +59,7 @@ http://localhost:52776/csp/healthshare/fhiranalytics/_DeepSee.UserPortal.Dashboa
 ```
 <img src="https://raw.githubusercontent.com/jrpereirajr/iris4health-fhir-analytics/master/img/aJyxE9FPRy.gif"></img>
 
-This same dashboard can be viewed using DeepSee Web viewer:
+This same dashboard can be viewed using [DeepSeeWeb](https://openexchange.intersystems.com/package/DeepSeeWeb):
 
 ```
 http://localhost:52776/dsw/index.html#!/d/User/Patient.dashboard?ns=FHIRANALYTICS
